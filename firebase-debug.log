@@ -1,0 +1,65 @@
+[debug] [2020-04-29T00:35:44.279Z] ----------------------------------------------------------------------
+[debug] [2020-04-29T00:35:44.281Z] Command:       /usr/local/Cellar/node/14.0.0/bin/node /usr/local/bin/firebase init functions
+[debug] [2020-04-29T00:35:44.281Z] CLI Version:   8.2.0
+[debug] [2020-04-29T00:35:44.281Z] Platform:      darwin
+[debug] [2020-04-29T00:35:44.281Z] Node Version:  v14.0.0
+[debug] [2020-04-29T00:35:44.282Z] Time:          Tue Apr 28 2020 17:35:44 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-04-29T00:35:44.282Z] ----------------------------------------------------------------------
+[debug] [2020-04-29T00:35:44.282Z] 
+[debug] [2020-04-29T00:35:44.290Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-29T00:35:44.290Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jstover
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using learning-213317.
+[debug] [2020-04-29T00:35:44.298Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/learning-213317  
+ 
+[debug] [2020-04-29T00:35:44.499Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Apr 2020 00:35:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2020-04-29T00:35:44.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-29T00:35:44.502Z] > authorizing via signed-in user
+[debug] [2020-04-29T00:35:44.503Z] [iam] checking project learning-213317 for permissions ["firebase.projects.get"]
+[debug] [2020-04-29T00:35:44.503Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-213317:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-29T00:35:44.784Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Apr 2020 00:35:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=169","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-29T00:35:44.785Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/learning-213317/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2020-04-29T00:35:44.786Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/learning-213317/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2020-04-29T00:35:45.338Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Apr 2020 00:35:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-29T00:35:45.339Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 29 Apr 2020 00:35:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  Wrote functions/package.json
+[info] ✔  Wrote functions/.eslintrc.json
+[info] i  Skipping write of functions/index.js
+[debug] [2020-04-29T00:36:07.571Z] Error: EACCES: permission denied, open '/Users/jstover/functions/.gitignore'
+    at Object.openSync (fs.js:461:3)
+    at Object.writeFileSync (fs.js:1387:35)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:155:8)
+    at /usr/local/lib/node_modules/firebase-tools/lib/config.js:173:18
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
